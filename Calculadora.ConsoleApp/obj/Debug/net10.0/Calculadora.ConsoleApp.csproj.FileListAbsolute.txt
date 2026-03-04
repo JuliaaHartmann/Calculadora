@@ -12,3 +12,4 @@ C:\Users\julia\OneDrive\Desktop\Academida do Programador\Calculadora\Calculadora
 C:\Users\julia\OneDrive\Desktop\Academida do Programador\Calculadora\Calculadora.ConsoleApp\obj\Debug\net10.0\Calculadora.ConsoleApp.pdb
 C:\Users\julia\OneDrive\Desktop\Academida do Programador\Calculadora\Calculadora.ConsoleApp\obj\Debug\net10.0\Calculadora.ConsoleApp.genruntimeconfig.cache
 C:\Users\julia\OneDrive\Desktop\Academida do Programador\Calculadora\Calculadora.ConsoleApp\obj\Debug\net10.0\ref\Calculadora.ConsoleApp.dll
+C:\Users\julia\OneDrive\Desktop\Academida do Programador\Calculadora\Calculadora.ConsoleApp\obj\Debug\net10.0\Calculadora.ConsoleApp.sourcelink.json

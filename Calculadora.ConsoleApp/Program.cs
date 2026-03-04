@@ -25,7 +25,7 @@ while (deveContinuar == true) // condição
     Console.WriteLine("Selecione uma opção válida: ");
     string operacaoSelecionada = Console.ReadLine();
 
-     if (operacaoSelecionada == "S");
+     if (operacaoSelecionada == "S")
     {
         deveContinuar = false;
 

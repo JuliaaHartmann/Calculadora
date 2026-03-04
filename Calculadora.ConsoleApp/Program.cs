@@ -8,7 +8,7 @@ bool deveContinuar = true; // atribuição
 
 while (deveContinuar == true) // condição
 {
-   // Console.Clear();
+    // Console.Clear();
 
     Console.WriteLine("-----------------------------------");
     Console.WriteLine("Calculadora 2026");
@@ -25,7 +25,7 @@ while (deveContinuar == true) // condição
     Console.WriteLine("Selecione uma opção válida: ");
     string operacaoSelecionada = Console.ReadLine();
 
-     if (operacaoSelecionada == "S")
+    if (operacaoSelecionada == "S")
     {
         deveContinuar = false;
 
@@ -58,7 +58,7 @@ while (deveContinuar == true) // condição
 
     else if (operacaoSelecionada == "2")
     {
-    resultado = primeiroNumero - segundoNumero; 
+        resultado = primeiroNumero - segundoNumero;
     }
 
     else if (operacaoSelecionada == "3")
@@ -68,19 +68,19 @@ while (deveContinuar == true) // condição
 
     else
     {
-        if(segundoNumero == 0)
+        if (segundoNumero == 0)
         {
             Console.WriteLine("Não é possível fazer uma divisão por zero. Tente novamente.");
 
             return;
         }
-        
+
 
         resultado = primeiroNumero / segundoNumero;
     }
 
     Console.WriteLine("A operação dos dois números resulta em: " + resultado);
 
-    Console.ReadLine(); 
-} 
+    Console.ReadLine();
+}
 

@@ -56,21 +56,12 @@ while (deveContinuar == true) // condição
        continue; 
     }
 
-    // if (string.IsNullOrEmpty(strPrimeiroNumero))
+    decimal numeroDecimal = 1.1234567m;
 
-    // if (strPrimeiroNumero == null || strSegundoNumero == null)
-    // {
-    //    Console.WriteLine("Digite um número válido!");
-    //    Console.ReadLine();
+    decimal primeiroNumero = Convert.ToDecimal(strPrimeiroNumero);
+    decimal segundoNumero = Convert.ToDecimal(strSegundoNumero);
 
-    //    continue;
-    // }
-
-    // int = número inteiro
-    int primeiroNumero = Convert.ToInt32(strPrimeiroNumero);
-    int segundoNumero = Convert.ToInt32(strSegundoNumero);
-
-    int resultado;
+    decimal resultado;
 
     if (operacaoSelecionada == "1")
     {

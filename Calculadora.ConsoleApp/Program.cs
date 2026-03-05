@@ -3,12 +3,14 @@
 // Requisito 03: Nossa calculadora deve permtir a multiplicação de dois números
 // Requisito 04: Nossa calculadora deve permtir a divisão de dois números
 // Requisito 05: Nossa calculadora deve permitir a execução de múltiplas operações
+// Requisito 06: Nossa calculadora deve dar a possibilidade de produzir a tabuada de um número informado 
+// Requisito 07: Nossa calculadora deve dar a possibilidade de visualizar o histórico de operações
 
 bool deveContinuar = true; // atribuição
 
 while (deveContinuar == true) // condição
 {
-    // Console.Clear();
+    Console.Clear();
 
     Console.WriteLine("-----------------------------------");
     Console.WriteLine("Calculadora 2026");
@@ -18,6 +20,7 @@ while (deveContinuar == true) // condição
     Console.WriteLine("2 - Subtração");
     Console.WriteLine("3 - Multiplicação");
     Console.WriteLine("4 - Divisão");
+    Console.WriteLine("5 - Tabuada");
     Console.WriteLine("S - Sair");
 
     Console.WriteLine();
@@ -32,13 +35,40 @@ while (deveContinuar == true) // condição
         continue;
     }
 
+    // Lógica da Tabuada
+    if (operacaoSelecionada == "5")
+    {
+        Console.Write("Digite o número que deseja gerar a tabuada: ");
+    
+        int numeroTabuada = Convert.ToInt32(Console.ReadLine());
+
+        // para cada...
+        // 1. contador/iterador
+        // 2. enquanto a condição for verdadeira...
+        // 3. iteração da variável contadora
+        for (int contador = 1; contador <= 10; contador = contador + 1)
+        {
+            int resultadoTabuada = numeroTabuada * contador;
+
+            string operacaoTabuada = numeroTabuada + " x " + contador + " = " + resultadoTabuada;
+           
+            Console.WriteLine(operacaoTabuada);
+        }
+
+        Console.ReadLine();
+
+        continue;
+    }
+
+    //Lógica das Operações de Cálculo
+
     Console.WriteLine("Digite o primeiro número: ");
     string? strPrimeiroNumero = Console.ReadLine();
 
-    Console.WriteLine();
-
     Console.WriteLine("Digite o segundo número: ");
     string? strSegundoNumero = Console.ReadLine();
+
+    Console.WriteLine();
 
     Console.WriteLine("O primeiro número digitado foi: " + strPrimeiroNumero);
     Console.WriteLine("O segundo número digitado foi: " + strSegundoNumero);
@@ -55,8 +85,6 @@ while (deveContinuar == true) // condição
 
        continue; 
     }
-
-    decimal numeroDecimal = 1.1234567m;
 
     decimal primeiroNumero = Convert.ToDecimal(strPrimeiroNumero);
     decimal segundoNumero = Convert.ToDecimal(strSegundoNumero);
